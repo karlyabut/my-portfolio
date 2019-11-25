@@ -48,24 +48,16 @@ class App extends Component {
           <SideDrawer show={this.state.sideDrawerOpen}/>
           {backDrop}
         </div>
-      <main class="wrapper">
-      <div className="App">
-        <header className="App-header">
+      <main className="wrapper">
+        <section className="section parallax bgHeader">
           <Particles className="particle" params={particleOpt}/>
-          <h1>Karl Eisen Yabut</h1>
-        </header>
-      </div>
-      <div>
-        <h1>new section</h1>
-      </div>
-      <section class="section parallax bg1">
-        <h1>Such Adorableness</h1>
-      </section>
-      <section class="section static">
-      </section>
-      <section class="section parallax bg2">
-        <h1>SO FWUFFY AWWW</h1>
-      </section>
+          <h1 className="name">Karl Eisen Yabut</h1>
+        </section>
+        <section className="section projects">
+        </section>
+        <section className="section parallax bgProject">
+          <h1>SO FWUFFY AWWW</h1>
+        </section>
       </main>
   
       </Fragment>

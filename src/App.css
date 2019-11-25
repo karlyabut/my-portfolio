@@ -1,10 +1,8 @@
-.App {
-  text-align: center;
-}
+
 .particle {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 675px;
 }
 
 .header {
@@ -15,26 +13,6 @@
   position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  margin-top: 56px;
-  background: #545454;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  box-shadow: inset 0 0 20px #ffde59;
-}
-
-.App-link {
-  color: #09d3ac;
-}
 
 /* Tiny reset thingy */
 /* body,html{margin:0;padding:0;} */
@@ -85,15 +63,18 @@
 }
 
 /* The styling for the static div. */
-.static {
-  background: red;
+.projects {
+  background: #ffffff;
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: url('https://placekitten.com/g/900/700');
+.bgHeader::after {
+  background-image: url('./images/headerImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.bg2::after {
+.bgProject::after {
   background-image: url('https://placekitten.com/g/800/600');
 }
