@@ -12,8 +12,8 @@ const navbar = props => (
       <div className="spacer" />
       <div className="navbar__navigation-items">
         <ul>
-          <li><a href="/">About Me</a></li>
-          <li><a href="/">Projects</a></li>
+          <li><span onClick={props.scrollAbout}>About Me</span></li>
+          <li><span onClick={props.scrollProject}>Projects</span></li>
         </ul>
       </div>
     </nav>

@@ -41,13 +41,14 @@
   padding: 0 0.5rem;
 }
 
-.navbar__navigation-items a {
+.navbar__navigation-items span {
+  cursor: pointer;
   color: #ffffff;
   text-decoration: none;
 }
 
-.navbar__navigation-items a:hover,
-.navbar__navigation-items a:active {
+.navbar__navigation-items span:hover,
+.navbar__navigation-items span:active {
   color: #FFDE59
 }
 
