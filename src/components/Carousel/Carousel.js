@@ -3,7 +3,6 @@ import range from 'lodash/range';
 import styled from 'styled-components';
 import ItemsCarousel from 'react-items-carousel';
 
-const noOfItems = items.length;
 const noOfCards = 2;
 const autoPlayDelay = 3000;
 const chevronWidth = 50;
@@ -25,7 +24,7 @@ const SlideItem = styled.div`
   border-radius: 50px;
 `;
 
-const carouselItems = myitems => range(noOfItems).map(index => (
+const carouselItems = myitems => range(myitems.length).map(index => (
   <SlideItem key={index} src={myitems[index%myitems.length]}>
   </SlideItem>
 ));
@@ -48,7 +47,7 @@ class AutoPlayCarousel extends React.Component {
   }
 
   tick = () => this.setState(prevState => ({
-    activeItemIndex: (prevState.activeItemIndex + 1) % (noOfItems-noOfCards + 1),
+    activeItemIndex: (prevState.activeItemIndex + 1) % (this.props.items.length-noOfCards + 1),
   }));
 
   onChange = value => this.setState({ activeItemIndex: value });

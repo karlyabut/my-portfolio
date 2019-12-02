@@ -5,11 +5,27 @@ import Navbar from './components/Navbar/Navbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Carousel from './components/Carousel/Carousel';
+//Skedoodle images
 import skedoodle from './images/projects/skedoodle.png';
-import scheduler from './images/projects/scheduler.png';
-import tweeter from './images/projects/tweeter.png';
+import skedoodle1 from './images/projects/skedoodle1.png';
+import skedoodle2 from './images/projects/skedoodle2.png';
+import skedoodle3 from './images/projects/skedoodle3.png';
+import skedoodle4 from './images/projects/skedoodle4.png';
 
-const skeddodleProp = [ skedoodle, scheduler, tweeter ];
+//Scheduler images
+import scheduler from './images/projects/scheduler.png';
+import scheduler1 from './images/projects/scheduler1.png';
+import scheduler2 from './images/projects/scheduler2.png';
+
+//Tweeter images
+import tweeter from './images/projects/tweeter.png';
+import tweeter1 from './images/projects/tweeter1.png';
+import tweeter2 from './images/projects/tweeter2.png';
+
+
+const skeddodleProp = [ skedoodle, skedoodle1, skedoodle2, skedoodle3, skedoodle4 ];
+const schedulerProp = [ scheduler, scheduler1, scheduler2 ];
+const tweeterProp = [ tweeter, tweeter1, tweeter2 ];
 
 const particleOpt = {
     particles: {
@@ -117,8 +133,30 @@ class App extends Component {
                 <p>tech stack</p>
                 <button>github</button>
               </div>
-              <div className="firstImgContainer">
+              <div className="firstCarouselContainer">
                 <Carousel items={skeddodleProp}/>
+              </div>
+            </div>
+            <div className="firstProject">
+              <div className="firstDesc">
+                <h1>Scheduler</h1>
+                <p>some desc</p>
+                <p>tech stack</p>
+                <button>github</button>
+              </div>
+              <div className="firstCarouselContainer">
+                <Carousel items={schedulerProp}/>
+              </div>
+            </div>
+            <div className="firstProject">
+              <div className="firstDesc">
+                <h1>Tweeter</h1>
+                <p>some desc</p>
+                <p>tech stack</p>
+                <button>github</button>
+              </div>
+              <div className="firstCarouselContainer">
+                <Carousel items={tweeterProp}/>
               </div>
             </div>
           </div>
