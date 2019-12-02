@@ -14,7 +14,6 @@ const autoPlayDelay = 3000;
 const chevronWidth = 50;
 
 const Wrapper = styled.div`
-  padding: 0 ${chevronWidth}px;
   max-width: 1500px;
   margin: 0 auto;
 `;
@@ -67,8 +66,6 @@ class AutoPlayCarousel extends React.Component {
           numberOfCards={noOfCards}
           activeItemIndex={this.state.activeItemIndex}
           requestToChangeActive={this.onChange}
-          rightChevron={<button>{'>'}</button>}
-          leftChevron={<button>{'<'}</button>}
           chevronWidth={chevronWidth}
           outsideChevron
           children={carouselItems}
