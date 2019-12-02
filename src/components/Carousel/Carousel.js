@@ -2,11 +2,6 @@ import React from 'react';
 import range from 'lodash/range';
 import styled from 'styled-components';
 import ItemsCarousel from 'react-items-carousel';
-import skedoodle from '../../images/projects/skedoodle.png';
-import scheduler from '../../images/projects/scheduler.png';
-import tweeter from '../../images/projects/tweeter.png';
-
-const items = [ skedoodle, scheduler, tweeter ];
 
 const noOfItems = items.length;
 const noOfCards = 2;
@@ -30,8 +25,8 @@ const SlideItem = styled.div`
   border-radius: 50px;
 `;
 
-const carouselItems = range(noOfItems).map(index => (
-  <SlideItem key={index} src={items[index%items.length]}>
+const carouselItems = myitems => range(noOfItems).map(index => (
+  <SlideItem key={index} src={myitems[index%myitems.length]}>
   </SlideItem>
 ));
 
@@ -68,7 +63,7 @@ class AutoPlayCarousel extends React.Component {
           requestToChangeActive={this.onChange}
           chevronWidth={chevronWidth}
           outsideChevron
-          children={carouselItems}
+          children={carouselItems(this.props.items)}
         />
       </Wrapper>
     );
