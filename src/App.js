@@ -22,6 +22,20 @@ import tweeter from './images/projects/tweeter.png';
 import tweeter1 from './images/projects/tweeter1.png';
 import tweeter2 from './images/projects/tweeter2.png';
 
+//Tech stack images
+import javascript from './images/techImages/javascript.png';
+import react from './images/techImages/react.png';
+import html5 from './images/techImages/html5.png';
+import css3 from './images/techImages/css3.png';
+import jquery from './images/techImages/jquery.png';
+import node from './images/techImages/node.png';
+import express from './images/techImages/express.png';
+import postgresql from './images/techImages/postgresql.png';
+import csharp from './images/techImages/csharp.png';
+import java from './images/techImages/java.png';
+import git from './images/techImages/git.png';
+import github from './images/techImages/github.svg';
+
 
 const skeddodleProp = [ skedoodle, skedoodle1, skedoodle2, skedoodle3, skedoodle4 ];
 const schedulerProp = [ scheduler, scheduler1, scheduler2 ];
@@ -130,7 +144,9 @@ class App extends Component {
                 <h1 className="projectTitle">Skedoodle</h1>
                 <p>A combination of broken telephone and pictionary party game.</p>                
                 <div className="btnContainer">
-                  <button className="githubBtn">github</button>
+                  <button className="githubBtn" onClick={() => {
+                      window.location.href = "https://github.com/etseng02/illustrations"
+                    }}>Github <i className="fab fa-github"></i></button>
                 </div>
               </div>
               <div className="carouselContainer">
@@ -160,7 +176,9 @@ class App extends Component {
                 <h1 className="projectTitle">Scheduler</h1>
                 <p>A website application for setting up interviews.</p>
                 <div className="btnContainer">
-                  <button className="githubBtn">github</button>
+                  <button className="githubBtn" onClick={() => {
+                    window.location.href = "https://github.com/karlyabut/scheduler"
+                  }}>Github <i className="fab fa-github"></i></button>
                 </div>
               </div>
               <div className="carouselContainer">
@@ -187,7 +205,9 @@ class App extends Component {
                 <h1 className="projectTitle">Tweeter</h1>
                 <p>Twitter clone powered by AJAX</p>
                 <div className="btnContainer">
-                  <button className="githubBtn">github</button>
+                  <button className="githubBtn" onClick={() => {
+                    window.location.href = "https://github.com/karlyabut/tweeter"
+                  }}>Github <i className="fab fa-github"></i></button>
                 </div>
               </div>
               <div className="carouselContainer">
@@ -208,7 +228,44 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <section className="section parallax bgProject">
+        <section className="section parallax bgSkills">
+          <div className="skillsContainer">
+            <h1 className="skillsTitle">Skills</h1>
+            <div className="techContainer">
+              <div className="frontendContainer">
+                <h1>Front-End</h1>
+                <img className="techImage" src={javascript} alt="javascript" />
+                <img className="techImage" src={react} alt="react" />
+                <img className="techImage" src={html5} alt="html5" />
+                <img className="techImage" src={css3} alt="css3" />
+                <img className="techImage" src={jquery} alt="jquery" />
+              </div>
+              <div className="backendContainer">
+                <h1>Back-End</h1>
+                <img className="techImage" src={node} alt="node" />
+                <img className="techImage" src={express} alt="express" />
+              </div>
+              <div className="databaseContainer">
+                <h1>Database</h1>
+                <img className="techImage" src={postgresql} alt="postgresql" />
+              </div>
+              <div className="scmContainer">
+                <h1>Source Control Management</h1>
+                <img className="techImage" src={git} alt="git" />
+                <img className="techImage" src={github} alt="github" />
+              </div>
+              <div className="languageContainer">
+                <h1>Languages</h1>
+                <img className="techImage" src={csharp} alt="csharp" />
+                <img className="techImage" src={java} alt="java" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="contact">
+          <div className="contactContainer">
+            <h1>Let's chat!</h1>
+          </div>
         </section>
       </main>
   

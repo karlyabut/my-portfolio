@@ -80,6 +80,8 @@
 
 .projectContainer {
   height: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .descContainer {
@@ -106,8 +108,13 @@
 }
 
 .githubBtn:hover {
-  background-color: #000000;
+  background-color: #CCB147;
+  border-color: #CCB147;
   color: white;
+}
+
+.githubBtn:focus {
+  outline: none;
 }
 
 .techStackContainer {
@@ -131,6 +138,41 @@
 .carouselImg {
   height: 275px;
   border-radius: 10px;
+}
+.skillsTitle {
+  padding-top: 50px;
+}
+.skillsContainer {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.frontendContainer, 
+.backendContainer, 
+.databaseContainer, 
+.scmContainer, 
+.languageContainer {
+  margin: 50px 20px 50px 20px;
+}
+
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.techImage {
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.contactContainer {
+  text-align: center;
 }
 
 
@@ -190,9 +232,13 @@
 }
 
 .project {
-  margin-left: 10px;
-  margin-right: 10px;
   overflow: auto;
+  background: #545454;
+  color: #ffffff;
+  text-shadow: 0 0 0;
+}
+
+.contact {
   background: #545454;
   color: #ffffff;
   text-shadow: 0 0 0;
@@ -207,15 +253,31 @@
   background-position: center;
 }
 
-.bgProject::after {
+.bgSkills::after {
   background-image: url('./images/projectsImage.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
 }
+@media (max-width: 920px) {
+  .bgSkills {
+    height: auto;
+  }
+}
 /*Mobile design*/
 @media (max-width: 768px) {
+
+  .circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border-bottom-right-radius: 75px;
+  }
+
+  .name {
+    font-size: 2.5em;
+  }
 
   .aboutMe {
     width: 80%;

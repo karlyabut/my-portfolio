@@ -29,9 +29,6 @@ const carouselItems = myitems => range(myitems.length).map(index => (
 ));
 
 class AutoPlayCarousel extends React.Component {
-  constructor(props) {
-    super(props)
-  };
   state = {
     activeItemIndex: 0,
   };
