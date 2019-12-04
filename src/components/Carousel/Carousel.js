@@ -13,19 +13,18 @@ const Wrapper = styled.div`
 `;
 
 const SlideItem = styled.div`
-  height: 350px;
   background: url('${props => props.src}');
-  background-size:100% 100%;
+  background-size: 100% 100%;
   display: flex;
+  object-fit: scale-down;
   align-items: center;
   justify-content: center;
   font-size: 20px;
   font-weight: bold;
-  border-radius: 50px;
 `;
 
 const carouselItems = myitems => range(myitems.length).map(index => (
-  <SlideItem key={index} src={myitems[index%myitems.length]}>
+  <SlideItem className="carouselImg" key={index} src={myitems[index%myitems.length]}>
   </SlideItem>
 ));
 

@@ -44,7 +44,6 @@ const particleOpt = {
       }
     }
 }
-const str = "asdasd";
 
 
 class App extends Component {
@@ -126,37 +125,85 @@ class App extends Component {
             <h1 className="allProjects">Projects</h1>
           </div>
           <div className="projectsContainer">
-            <div className="firstProject">
-              <div className="firstDesc">
-                <h1>Skedoodle</h1>
-                <p>some desc</p>
-                <p>tech stack</p>
-                <button>github</button>
+            <div className="projectContainer">
+              <div className="descContainer">
+                <h1 className="projectTitle">Skedoodle</h1>
+                <p>A combination of broken telephone and pictionary party game.</p>                
+                <div className="btnContainer">
+                  <button className="githubBtn">github</button>
+                </div>
               </div>
-              <div className="firstCarouselContainer">
+              <div className="carouselContainer">
                 <Carousel items={skeddodleProp}/>
+                <div className="techStackContainer">
+                  <p>Technologies</p>
+                  <div className="techStack">
+                    ReactJS
+                  </div>
+                  <div className="techStack">
+                    Socket.IO
+                  </div>
+                  <div className="techStack">
+                    Node
+                  </div>
+                  <div className="techStack">
+                    Express
+                  </div>
+                  <div className="techStack">
+                    PostgreSQL
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="firstProject">
-              <div className="firstDesc">
-                <h1>Scheduler</h1>
-                <p>some desc</p>
-                <p>tech stack</p>
-                <button>github</button>
+            <div className="projectContainer">
+              <div className="descContainer">
+                <h1 className="projectTitle">Scheduler</h1>
+                <p>A website application for setting up interviews.</p>
+                <div className="btnContainer">
+                  <button className="githubBtn">github</button>
+                </div>
               </div>
-              <div className="firstCarouselContainer">
+              <div className="carouselContainer">
                 <Carousel items={schedulerProp}/>
+                <div className="techStackContainer">
+                  <p>Technologies</p>
+                  <div className="techStack">
+                    ReactJS
+                  </div>
+                  <div className="techStack">
+                    Node
+                  </div>
+                  <div className="techStack">
+                    Express
+                  </div>
+                  <div className="techStack">
+                    PostgreSQL
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="firstProject">
-              <div className="firstDesc">
-                <h1>Tweeter</h1>
-                <p>some desc</p>
-                <p>tech stack</p>
-                <button>github</button>
+            <div className="projectContainer">
+              <div className="descContainer">
+                <h1 className="projectTitle">Tweeter</h1>
+                <p>Twitter clone powered by AJAX</p>
+                <div className="btnContainer">
+                  <button className="githubBtn">github</button>
+                </div>
               </div>
-              <div className="firstCarouselContainer">
+              <div className="carouselContainer">
                 <Carousel items={tweeterProp}/>
+                <div className="techStackContainer">
+                  <p>Technologies</p>
+                  <div className="techStack">
+                    jQuery
+                  </div>
+                  <div className="techStack">
+                    Node
+                  </div>
+                  <div className="techStack">
+                    Express
+                  </div>
+                </div>
               </div>
             </div>
           </div>

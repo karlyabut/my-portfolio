@@ -43,6 +43,7 @@
 .aboutMe {
   width: 50%;
   padding-top: 50px;
+  padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -69,18 +70,67 @@
 }
 
 .projectsContainer {
+  height: 100%;
   width: 100%;
 }
 
+.projectTitle {
+  text-align: center;
+}
 
-.firstDesc {
+.projectContainer {
+  height: 500px;
+}
+
+.descContainer {
   width: 25%;
   float: left;
 }
 
-.firstCarouselContainer {
+.btnContainer {
+  text-align: center;
+}
+
+.githubBtn {
+  border: 1px solid #FFDE59;
+  border-radius: 20px;
+  background: transparent;
+  color: #FFDE59;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.githubBtn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.techStackContainer {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.techStack {
+  display: inline-block;
+  color: #FFDE59;
+  padding: 5px 5px 5px;
+  margin: 10px 10px 1px 1px;
+  border: 1px solid #FFDE59;
+}
+
+.carouselContainer {
   width: 75%;
   float: right;
+}
+
+.carouselImg {
+  height: 275px;
+  border-radius: 10px;
 }
 
 
@@ -140,6 +190,8 @@
 }
 
 .project {
+  margin-left: 10px;
+  margin-right: 10px;
   overflow: auto;
   background: #545454;
   color: #ffffff;
@@ -161,4 +213,30 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
+}
+/*Mobile design*/
+@media (max-width: 768px) {
+
+  .aboutMe {
+    width: 80%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .descContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .carouselImg {
+    height: 150px;
+  }
+  
+  .carouselContainer {
+    width: 100%;
+  }
 }
