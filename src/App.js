@@ -36,6 +36,9 @@ import java from './images/techImages/java.png';
 import git from './images/techImages/git.png';
 import github from './images/techImages/github.svg';
 
+//Contact me
+import ContactMe from './components/ContactMe/ContactMe';
+
 
 const skeddodleProp = [ skedoodle, skedoodle1, skedoodle2, skedoodle3, skedoodle4 ];
 const schedulerProp = [ scheduler, scheduler1, scheduler2 ];
@@ -112,6 +115,9 @@ class App extends Component {
             <div className="circle-image"/>
             <h1 className="name">Karl Eisen Yabut</h1>
             <h2>Full Stack Developer</h2>
+            <button className="resumeBtn" onClick={() => {
+                      window.location.href = "https://www.canva.com/design/DADnjqJp9II/t0NNF_iHATYHozH0Q0cGSw/view?utm_content=DADnjqJp9II&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                    }}>Resume</button>
           </div>
         </section>
         <section ref={this.scrollAbout} className="section about">
@@ -264,7 +270,23 @@ class App extends Component {
         </section>
         <section className="contact">
           <div className="contactContainer">
-            <h1>Let's chat!</h1>
+            <div className="contactTitle">
+              <h1 className="p-heading1">Get in Touch</h1>
+            </div>
+            <div className="contactFormContainer">
+              <ContactMe/>
+            </div>
+          </div>
+          <div className="socialMediaContainer">
+            <a href="https://www.linkedin.com/in/karl-eisen-yabut-710917121/" className="socialIcon">
+              <i className="fab fa-linkedin"></i>
+              </a>
+            <a href="https://github.com/karlyabut" className="socialIcon">
+              <i className="fab fa-github-square"></i>
+            </a>
+          </div>
+          <div className="footer">
+            <p>© 2019 Karl Eisen Yabut</p>
           </div>
         </section>
       </main>

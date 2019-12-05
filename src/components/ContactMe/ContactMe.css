@@ -1,0 +1,42 @@
+.text-primary {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.requiredField {
+  color: #ff0000;
+}
+
+.submitBtnContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.submitBtn {
+  border: 1px solid #FFDE59;
+  border-radius: 20px;
+  background: transparent;
+  color: #FFDE59;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #CCB147;
+  border-color: #CCB147;
+  color: white;
+}
+
+.submitBtn:focus {
+  outline: none;
+}

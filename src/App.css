@@ -1,3 +1,5 @@
+/* BUTTONS needs refactoring */
+
 .particle {
   position: absolute;
   width: 100%;
@@ -38,6 +40,30 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.resumeBtn {
+  border: 1px solid #FFDE59;
+  border-radius: 20px;
+  background: transparent;
+  color: #FFDE59;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.resumeBtn:hover {
+  background-color: #CCB147;
+  border-color: #CCB147;
+  color: white;
+}
+
+.resumeBtn:focus {
+  outline: none;
 }
 
 .aboutMe {
@@ -171,8 +197,36 @@
   margin-bottom: 20px;
 }
 
-.contactContainer {
+.contactTitle {
+  padding-top: 50px;
   text-align: center;
+}
+
+.contactContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.contactFormContainer {
+  padding-bottom: 50px;
+}
+
+.socialMediaContainer {
+  text-align: center;
+}
+
+.socialIcon {
+  color: #FFDE59;
+  font-size: 2em;
+  padding: 5px 5px 5px;
+  margin: 10px 10px 1px 1px;
+}
+
+.footer {
+  text-align: center;
+  color: #FFDE59;
+  padding: 20px 20px 20px 20px;
 }
 
 
@@ -300,5 +354,9 @@
   
   .carouselContainer {
     width: 100%;
+  }
+
+  .contactContainer {
+    width: 75%;
   }
 }
