@@ -142,7 +142,7 @@ class App extends Component {
         </section>
         <section ref={this.scrollProject} className="project">
           <div className="myProject">
-            <h1 className="allProjects">Projects</h1>
+            <h1 className="allProjects title">Projects</h1>
           </div>
           <div className="projectsContainer">
             <div className="projectContainer">
@@ -158,7 +158,7 @@ class App extends Component {
               <div className="carouselContainer">
                 <Carousel items={skeddodleProp}/>
                 <div className="techStackContainer">
-                  <p>Technologies</p>
+                  <h1>Technologies</h1>
                   <div className="techStack">
                     ReactJS
                   </div>
@@ -190,7 +190,7 @@ class App extends Component {
               <div className="carouselContainer">
                 <Carousel items={schedulerProp}/>
                 <div className="techStackContainer">
-                  <p>Technologies</p>
+                  <h1>Technologies</h1>
                   <div className="techStack">
                     ReactJS
                   </div>
@@ -219,7 +219,7 @@ class App extends Component {
               <div className="carouselContainer">
                 <Carousel items={tweeterProp}/>
                 <div className="techStackContainer">
-                  <p>Technologies</p>
+                  <h1>Technologies</h1>
                   <div className="techStack">
                     jQuery
                   </div>
@@ -236,7 +236,7 @@ class App extends Component {
         </section>
         <section className="section parallax bgSkills">
           <div className="skillsContainer">
-            <h1 className="skillsTitle">Skills</h1>
+            <h1 className="skillsTitle title">Skills</h1>
             <div className="techContainer">
               <div className="frontendContainer">
                 <h1>Front-End</h1>
@@ -270,8 +270,8 @@ class App extends Component {
         </section>
         <section className="contact">
           <div className="contactContainer">
-            <div className="contactTitle">
-              <h1 className="p-heading1">Get in Touch</h1>
+            <div className="contactTitleContainer">
+              <h1 className="contactTitle title">Get in Touch</h1>
             </div>
             <div className="contactFormContainer">
               <ContactMe/>
