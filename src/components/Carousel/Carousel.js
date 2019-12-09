@@ -3,7 +3,16 @@ import range from 'lodash/range';
 import styled from 'styled-components';
 import ItemsCarousel from 'react-items-carousel';
 
-const noOfCards = 2;
+let noOfCards = 2;
+
+//returns number of card for carousel according to screen width
+const mediaItems = () => {
+  if(window.innerWidth < 768) {
+    return 1;
+  } else {
+    return 2;
+  }
+}
 const autoPlayDelay = 3000;
 const chevronWidth = 50;
 
@@ -34,7 +43,6 @@ class AutoPlayCarousel extends React.Component {
   };
 
   componentDidMount() {
-    console.log("Asdasd", this.props.propstopass)
     this.interval = setInterval(this.tick, autoPlayDelay);
   }
 
@@ -52,8 +60,9 @@ class AutoPlayCarousel extends React.Component {
     return (
       <Wrapper>
         <ItemsCarousel
+          className="itemsCarousel"
           gutter={12}
-          numberOfCards={noOfCards}
+          numberOfCards={mediaItems()}
           activeItemIndex={this.state.activeItemIndex}
           requestToChangeActive={this.onChange}
           chevronWidth={chevronWidth}

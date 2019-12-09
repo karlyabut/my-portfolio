@@ -170,6 +170,8 @@
   height: 275px;
   border-radius: 10px;
 }
+
+
 .skillsTitle {
   padding-top: 50px;
 }
@@ -319,6 +321,41 @@
   background-position: center;
   opacity: 0.2;
 }
+
+/* set carousel images according to screen width */
+@media (min-width: 1550px) {
+  .carouselImg {
+    height: 350px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .techImage {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .carouselImg {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .carouselImg {
+    height: 200px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .carouselImg {
+    height: 150px;
+  }
+}
+
 @media (max-width: 920px) {
   .bgSkills {
     height: auto;
@@ -354,7 +391,7 @@
   }
 
   .carouselImg {
-    height: 150px;
+    height: 300px;
   }
   
   .carouselContainer {
