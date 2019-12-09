@@ -350,12 +350,6 @@
   }
 }
 
-@media (max-width: 1120px) {
-  .carouselImg {
-    height: 150px;
-  }
-}
-
 @media (max-width: 920px) {
   .bgSkills {
     height: auto;
