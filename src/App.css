@@ -24,7 +24,7 @@
 .circle-image {
   width: 200px;
   height: 200px;
-  background-image: url('https://picsum.photos/id/1025/4951/3301');
+  background-image: url('../src/images/profilePic/portfolioPic.jpg');
   background-size: cover;
   display: block;
   border-radius: 100px;
