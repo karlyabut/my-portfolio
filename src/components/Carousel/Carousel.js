@@ -1,18 +1,18 @@
-import React from 'react';
-import range from 'lodash/range';
-import styled from 'styled-components';
-import ItemsCarousel from 'react-items-carousel';
+import React from "react";
+import range from "lodash/range";
+import styled from "styled-components";
+import ItemsCarousel from "react-items-carousel";
 
 let noOfCards = 2;
 
 //returns number of card for carousel according to screen width
 const mediaItems = () => {
-  if(window.innerWidth < 768) {
+  if (window.innerWidth < 768) {
     return 1;
   } else {
     return 2;
   }
-}
+};
 const autoPlayDelay = 3000;
 const chevronWidth = 50;
 
@@ -32,14 +32,18 @@ const SlideItem = styled.div`
   font-weight: bold;
 `;
 
-const carouselItems = myitems => range(myitems.length).map(index => (
-  <SlideItem className="carouselImg" key={index} src={myitems[index%myitems.length]}>
-  </SlideItem>
-));
+const carouselItems = myitems =>
+  range(myitems.length).map(index => (
+    <SlideItem
+      className="carouselImg"
+      key={index}
+      src={myitems[index % myitems.length]}
+    ></SlideItem>
+  ));
 
 class AutoPlayCarousel extends React.Component {
   state = {
-    activeItemIndex: 0,
+    activeItemIndex: 0
   };
 
   componentDidMount() {
@@ -50,9 +54,12 @@ class AutoPlayCarousel extends React.Component {
     clearInterval(this.interval);
   }
 
-  tick = () => this.setState(prevState => ({
-    activeItemIndex: (prevState.activeItemIndex + 1) % (this.props.items.length-noOfCards + 1),
-  }));
+  tick = () =>
+    this.setState(prevState => ({
+      activeItemIndex:
+        (prevState.activeItemIndex + 1) %
+        (this.props.items.length - noOfCards + 1)
+    }));
 
   onChange = value => this.setState({ activeItemIndex: value });
 

@@ -8,7 +8,7 @@
 }
 
 .header {
-  background: linear-gradient(to right, #545454 90%, #FFDE59);
+  background: linear-gradient(to right, #545454 90%, #ffde59);
 }
 
 .headerChild {
@@ -24,7 +24,7 @@
 .circle-image {
   width: 200px;
   height: 200px;
-  background-image: url('../src/images/profilePic/portfolioPic.jpg');
+  background-image: url("../src/images/profilePic/portfolioPic.jpg");
   background-size: cover;
   display: block;
   border-radius: 100px;
@@ -43,10 +43,10 @@
 }
 
 .resumeBtn {
-  border: 1px solid #FFDE59;
+  border: 1px solid #ffde59;
   border-radius: 20px;
   background: transparent;
-  color: #FFDE59;
+  color: #ffde59;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -57,8 +57,8 @@
 }
 
 .resumeBtn:hover {
-  background-color: #CCB147;
-  border-color: #CCB147;
+  background-color: #ccb147;
+  border-color: #ccb147;
   color: white;
 }
 
@@ -125,10 +125,10 @@
 }
 
 .githubBtn {
-  border: 1px solid #FFDE59;
+  border: 1px solid #ffde59;
   border-radius: 20px;
   background: transparent;
-  color: #FFDE59;
+  color: #ffde59;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -139,8 +139,8 @@
 }
 
 .githubBtn:hover {
-  background-color: #CCB147;
-  border-color: #CCB147;
+  background-color: #ccb147;
+  border-color: #ccb147;
   color: white;
 }
 
@@ -155,10 +155,10 @@
 
 .techStack {
   display: inline-block;
-  color: #FFDE59;
+  color: #ffde59;
   padding: 5px 5px 5px;
   margin: 10px 10px 1px 1px;
-  border: 1px solid #FFDE59;
+  border: 1px solid #ffde59;
 }
 
 .carouselContainer {
@@ -171,7 +171,6 @@
   border-radius: 10px;
 }
 
-
 .skillsTitle {
   padding-top: 50px;
 }
@@ -180,10 +179,10 @@
   height: 100%;
   width: 100%;
 }
-.frontendContainer, 
-.backendContainer, 
-.databaseContainer, 
-.scmContainer, 
+.frontendContainer,
+.backendContainer,
+.databaseContainer,
+.scmContainer,
 .languageContainer {
   margin: 50px 20px 50px 20px;
 }
@@ -224,7 +223,7 @@
 }
 
 .socialIcon {
-  color: #FFDE59;
+  color: #ffde59;
   font-size: 2em;
   padding: 5px 5px 5px;
   margin: 10px 10px 1px 1px;
@@ -232,10 +231,9 @@
 
 .footer {
   text-align: center;
-  color: #FFDE59;
+  color: #ffde59;
   padding: 20px 20px 20px 20px;
 }
-
 
 /* Tiny reset thingy */
 /* body,html{margin:0;padding:0;} */
@@ -257,13 +255,12 @@
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   height: 100vh;
-  
+
   /* For text formatting. */
   display: flex;
   color: white;
   text-shadow: 0 0 5px #000;
 }
-
 
 .parallax::after {
   /* Display and position the pseudo-element */
@@ -273,14 +270,14 @@
   right: 0;
   bottom: 0;
   left: 0;
-  
+
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
   transform: translateZ(-1px) scale(1.5);
   /* Force the background image to fill the whole element. */
   background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */ 
+  /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
 
@@ -305,17 +302,16 @@
   text-shadow: 0 0 0;
 }
 
-
 /* Sets the actual background images to adorable kitties. This part is crucial. */
 .bgHeader::after {
-  background-image: url('./images/headerImage.jpg');
+  background-image: url("./images/headerImage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bgSkills::after {
-  background-image: url('./images/projectsImage.png');
+  background-image: url("./images/projectsImage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -357,7 +353,6 @@
 }
 /*Mobile design*/
 @media (max-width: 768px) {
-
   .circle-image {
     width: 150px;
     height: 150px;
@@ -387,7 +382,7 @@
   .carouselImg {
     height: 275px;
   }
-  
+
   .carouselContainer {
     width: 100%;
   }
