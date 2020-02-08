@@ -195,7 +195,7 @@ class App extends Component {
                     <h1>Technologies</h1>
                     <div className="techStack">ReactJS</div>
                     <div className="techStack">Socket.IO</div>
-                    <div className="techStack">Node</div>
+                    <div className="techStack">NodeJS</div>
                     <div className="techStack">Express</div>
                     <div className="techStack">PostgreSQL</div>
                   </div>
@@ -222,7 +222,7 @@ class App extends Component {
                   <div className="techStackContainer">
                     <h1>Technologies</h1>
                     <div className="techStack">ReactJS</div>
-                    <div className="techStack">Node</div>
+                    <div className="techStack">NodeJS</div>
                     <div className="techStack">Express</div>
                     <div className="techStack">PostgreSQL</div>
                   </div>
@@ -249,7 +249,7 @@ class App extends Component {
                   <div className="techStackContainer">
                     <h1>Technologies</h1>
                     <div className="techStack">jQuery</div>
-                    <div className="techStack">Node</div>
+                    <div className="techStack">NodeJS</div>
                     <div className="techStack">Express</div>
                   </div>
                 </div>

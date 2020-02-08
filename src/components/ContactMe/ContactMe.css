@@ -11,6 +11,17 @@
 .requiredField {
   color: #ff0000;
 }
+.errorInput {
+  color: #ff0000;
+  text-align: center;
+  padding-bottom: 2em;
+}
+.errorMessage {
+  background-color: #ff7272;
+  color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+}
 
 .submitBtnContainer {
   width: 100%;
@@ -18,10 +29,10 @@
 }
 
 .submitBtn {
-  border: 1px solid #FFDE59;
+  border: 1px solid #ffde59;
   border-radius: 20px;
   background: transparent;
-  color: #FFDE59;
+  color: #ffde59;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -32,8 +43,8 @@
 }
 
 .submitBtn:hover {
-  background-color: #CCB147;
-  border-color: #CCB147;
+  background-color: #ccb147;
+  border-color: #ccb147;
   color: white;
 }
 

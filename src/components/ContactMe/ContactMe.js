@@ -7,12 +7,16 @@ class ContactForm extends Component {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
+    errorMessage: false
   };
   handleSubmit(e) {
     e.preventDefault();
     const { name, email, subject, message } = this.state;
     if (name === "" || email === "" || subject === "" || message === "") {
+      this.setState((prevState, props) => {
+        return { errorMessage: !prevState.errorMessage };
+      });
       return;
     }
     let templateParams = {
@@ -43,11 +47,16 @@ class ContactForm extends Component {
   render() {
     return (
       <>
+        <div className="errorInput">
+          {this.state.errorMessage && (
+            <div className="errorMessage">Oops! All fields are required :(</div>
+          )}
+        </div>
         <Form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup>
             <Label className="text-muted" for="email">
               Email address
-            </Label>
+            </Label>{" "}
             <span className="requiredField"> *</span>
             <Input
               id="email"
@@ -98,7 +107,12 @@ class ContactForm extends Component {
             />
           </FormGroup>
           <div className="submitBtnContainer">
-            <Button className="submitBtn" variant="primary" type="submit">
+            <Button
+              className="submitBtn"
+              variant="primary"
+              type="submit"
+              onClick={this.errorMessage}
+            >
               Submit
             </Button>
           </div>
