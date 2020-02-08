@@ -302,7 +302,6 @@ class App extends Component {
             <div className="contactContainer">
               <div className="contactTitleContainer">
                 <h1 className="contactTitle title">Get in Touch</h1>
-                <h1 style={{ color: "yellow" }}>Under construction!</h1>
               </div>
               <div className="contactFormContainer">
                 <ContactMe />
