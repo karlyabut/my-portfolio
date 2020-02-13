@@ -1,3 +1,3 @@
-(IN PROGRESS)
+#Karl's Website Portfolio
 
-React website portfolio.
+A simple personal website that is built using ReactJS.
