@@ -130,10 +130,10 @@ class App extends Component {
               <button
                 className="resumeBtn"
                 onClick={() => {
-                  window.location.href =
-                    "https://www.canva.com/design/DADnjqJp9II/t0NNF_iHATYHozH0Q0cGSw/view?utm_content=DADnjqJp9II&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink";
-                }}
-              >
+                  window.open(
+                    "https://www.canva.com/design/DADnjqJp9II/t0NNF_iHATYHozH0Q0cGSw/view?utm_content=DADnjqJp9II&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                  );
+                }}>
                 Resume
               </button>
             </div>
@@ -183,8 +183,7 @@ class App extends Component {
                       onClick={() => {
                         window.location.href =
                           "https://github.com/etseng02/illustrations";
-                      }}
-                    >
+                      }}>
                       Github <i className="fab fa-github"></i>
                     </button>
                   </div>
@@ -211,8 +210,7 @@ class App extends Component {
                       onClick={() => {
                         window.location.href =
                           "https://github.com/karlyabut/scheduler";
-                      }}
-                    >
+                      }}>
                       Github <i className="fab fa-github"></i>
                     </button>
                   </div>
@@ -238,8 +236,7 @@ class App extends Component {
                       onClick={() => {
                         window.location.href =
                           "https://github.com/karlyabut/tweeter";
-                      }}
-                    >
+                      }}>
                       Github <i className="fab fa-github"></i>
                     </button>
                   </div>
@@ -310,11 +307,14 @@ class App extends Component {
             <div className="socialMediaContainer">
               <a
                 href="https://www.linkedin.com/in/karl-eisen-yabut-710917121/"
-                className="socialIcon"
-              >
+                target="_blank"
+                className="socialIcon">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/karlyabut" className="socialIcon">
+              <a
+                href="https://github.com/karlyabut"
+                target="_blank"
+                className="socialIcon">
                 <i className="fab fa-github-square"></i>
               </a>
             </div>
