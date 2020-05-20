@@ -149,15 +149,15 @@ class App extends Component {
                 11 to be precise. My very first programming project (a 2D
                 vending machine) was so much fun and it led me to pursue a
                 career in technology.
-              </p>
-              <p className="descP">
+                <br />
+                <br />
                 After I decided that I wanted to build softwares, I went to
                 Centennial College for Software Engineering. It was a great
                 experience, but at the same time I thought that it was not
                 enough. They taught me many things to the point that it was hard
                 to master one thing, and I was only an adequate developer.
-              </p>
-              <p className="descP">
+                <br />
+                <br />
                 So, I decided that I should focus on one thing. I then found out
                 about bootcamps for developers. I enrolled to a Full-Stack
                 Development bootcamp called Lighthouse Labs. The bootcamp was a
@@ -181,8 +181,9 @@ class App extends Component {
                     <button
                       className="githubBtn"
                       onClick={() => {
-                        window.location.href =
-                          "https://github.com/etseng02/illustrations";
+                        window.open(
+                          "https://github.com/etseng02/illustrations"
+                        );
                       }}>
                       Github <i className="fab fa-github"></i>
                     </button>
@@ -208,8 +209,7 @@ class App extends Component {
                     <button
                       className="githubBtn"
                       onClick={() => {
-                        window.location.href =
-                          "https://github.com/karlyabut/scheduler";
+                        window.open("https://github.com/karlyabut/scheduler");
                       }}>
                       Github <i className="fab fa-github"></i>
                     </button>
@@ -234,8 +234,7 @@ class App extends Component {
                     <button
                       className="githubBtn"
                       onClick={() => {
-                        window.location.href =
-                          "https://github.com/karlyabut/tweeter";
+                        window.open("https://github.com/karlyabut/tweeter");
                       }}>
                       Github <i className="fab fa-github"></i>
                     </button>
