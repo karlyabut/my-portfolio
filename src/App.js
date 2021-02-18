@@ -131,7 +131,7 @@ class App extends Component {
                 className="resumeBtn"
                 onClick={() => {
                   window.open(
-                    "https://www.canva.com/design/DADnjqJp9II/t0NNF_iHATYHozH0Q0cGSw/view?utm_content=DADnjqJp9II&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                    "https://www.canva.com/design/DAEKtqyAccc/UXpx40u30YXBkhWwbcb8CA/view?utm_content=DAEKtqyAccc&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
                   );
                 }}>
                 Resume
