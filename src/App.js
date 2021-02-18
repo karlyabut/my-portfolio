@@ -307,12 +307,14 @@ class App extends Component {
               <a
                 href="https://www.linkedin.com/in/karl-eisen-yabut-710917121/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="socialIcon">
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
                 href="https://github.com/karlyabut"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="socialIcon">
                 <i className="fab fa-github-square"></i>
               </a>
